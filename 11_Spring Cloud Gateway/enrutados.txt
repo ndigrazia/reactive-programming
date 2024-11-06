@@ -1,0 +1,9 @@
+cloud: 
+    gateway:      
+      routes:
+      - id: serv-productos        
+        uri: lb://servicio-productos1 #http://localhost:8080
+        predicates:
+          - Path=/sproductos/**
+        filters:
+          - RewritePath=/sproductos/*, /

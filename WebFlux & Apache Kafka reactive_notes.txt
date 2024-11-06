@@ -1,0 +1,4 @@
+Query
+
+	Use a header:
+		Accept: text/event-steam
